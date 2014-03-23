@@ -8,7 +8,7 @@ setup(
     maintainer='Mike Gogulski',
     maintainer_email='mike@gogulski.com',
     url='https://github.com/mikegogulski/python-otrxmppchannel',
-    version='1.0.1',
+    version='1.0.2',
     packages=['otrxmppchannel', ],
     install_requires=[
         'python-potr',
@@ -16,6 +16,7 @@ setup(
     license='Unlicense',
     description='An OTR-XMPP communications channel',
     long_description=open('README.md').read(),
+    package_data={'': ['*.md', 'UNLICENSE']},
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
