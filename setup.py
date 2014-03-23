@@ -17,7 +17,6 @@ setup(
     description='An OTR-XMPP communications channel',
     long_description=open('README.md').read(),
     classifiers=[
-        'Keywords: OTR Off-the-Record Messaging XMPP jabber encryption',
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'License :: Public Domain',
