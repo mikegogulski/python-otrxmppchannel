@@ -1,21 +1,23 @@
 XMPP-OTR channel for Python
 ===========================
 
-This is a Python library for communicating with XMPP destinations using OTR
-([Off-the-Record Messaging](https://otr.cypherpunks.ca/)) encryption.
+This is a Python library for communicating with XMPP destinations using
+OTR (`Off-the-Record Messaging`_) encryption.
 
 Features
 --------
 
-* Your internet application can talk securely to you on your PC or smartphone
-using readily-available chat software with OTR support
-* OTRv2
-* Send to and receive from multiple destinations, with or without fingerprint
-verification
-* Pure python (no libotr dependency)
+-  Your internet application can talk securely to you on your PC or
+   smartphone using readily-available chat software with OTR support
+-  OTRv2
+-  Send to and receive from multiple destinations, with or without
+   fingerprint verification
+-  Pure python (no libotr dependency)
 
 Example
 -------
+
+::
 
     import time
     from otrxmppchannel import OTRXMPPChannel
@@ -58,32 +60,38 @@ Example
 Notes
 -----
 
-* XMPP invitations are not handled
-* It seems to take roughly 3 seconds to set up an OTR session. Messages sent
-before the session is ready may be lost.
-* The private key serialization format is specific to pure-python-otr.
-Conversions from other formats are not handled.
+-  XMPP invitations are not handled
+-  It seems to take roughly 3 seconds to set up an OTR session. Messages
+   sent before the session is ready may be lost.
+-  The private key serialization format is specific to pure-python-otr.
+   Conversions from other formats are not handled.
 
 Dependencies
 ------------
 
-* [xmpppy](http://xmpppy.sourceforge.net/) (>= 0.4.1)
-* [pure-python-otr](https://github.com/afflux/pure-python-otr) (>= 1.0.0)
+-  `xmpppy`_ (>= 0.4.1)
+-  `pure-python-otr`_ (>= 1.0.0)
 
 Author
 ------
 
-* [Mike Gogulski](mailto:mike@gogulski.com) - <https://github.com/mikegogulski>
+-  `Mike Gogulski`_ - https://github.com/mikegogulski
 
 Donations
 ---------
 
 If you found this software useful and would like to encourage its
-maintenance and further development, please consider making a donation to
-the Bitcoin address `1MWFhwdFVEhB3X4eVsm9WxwvAhaxQqNbJh`.
+maintenance and further development, please consider making a donation
+to the Bitcoin address ``1MWFhwdFVEhB3X4eVsm9WxwvAhaxQqNbJh``.
 
 License
 -------
 
-This is free and unencumbered public domain software. For more information,
-see <http://unlicense.org/> or the accompanying UNLICENSE file.
+This is free and unencumbered public domain software. For more
+information, see http://unlicense.org/ or the accompanying UNLICENSE
+file.
+
+.. _Off-the-Record Messaging: https://otr.cypherpunks.ca/
+.. _xmpppy: http://xmpppy.sourceforge.net/
+.. _pure-python-otr: https://github.com/afflux/pure-python-otr
+.. _Mike Gogulski: mailto:mike@gogulski.com
