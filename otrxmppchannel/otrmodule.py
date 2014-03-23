@@ -8,8 +8,8 @@
 # https://blog.darmasoft.net/2013/06/30/using-pure-python-otr.html
 
 from base64 import b64encode, b64decode
-import xmpp
 
+import xmpp
 import potr
 import potr.crypt
 from potr.compatcrypto import generateDefaultKey
@@ -26,10 +26,6 @@ DEFAULT_POLICY_FLAGS = {
 
 PROTOCOL = 'xmpp'
 MMS = 1024
-
-
-def d(msg):
-    print('OTR---> %s' % msg)
 
 
 # noinspection PyPep8Naming
@@ -51,7 +47,6 @@ class OTRContext(potr.context.Context):
         return False
 
     def setState(self, newstate):
-        # d('setState(%d)' % newstate)
         theirfp = 'None'
         if self.crypto.theirPubkey.fingerprint() is not None:
             theirfp = self.crypto.theirPubkey.fingerprint().encode('hex')
@@ -59,15 +54,9 @@ class OTRContext(potr.context.Context):
             if self.checkfp:
                 if self.fp == theirfp:
                     self.setCurrentTrust('manual')
-                    d('trusting fingerprint %s from %s' % (
-                        self.fp, self.peer))
                 else:
                     self.setCurrentTrust('untrusted')
-                    d('not trusting unfamiliar fingerprint %s from %s' % (
-                        theirfp, self.peer))
             else:
-                d('not checking fingerprint for %s (theirs is %s)' % (
-                    self.peer, theirfp))
                 pass
         else:
             self.setCurrentTrust(None)
