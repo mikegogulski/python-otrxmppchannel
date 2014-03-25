@@ -14,6 +14,14 @@ Features
    fingerprint verification
 -  Pure python (no libotr dependency)
 
+Installation
+------------
+
+::
+
+    $ sudo pip install --pre xmpppy  # xmpppy is tagged as an "rc" version
+    $ sudo pip install otrxmppchannel
+
 Example
 -------
 

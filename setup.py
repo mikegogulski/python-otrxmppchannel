@@ -8,7 +8,7 @@ setup(
     maintainer='Mike Gogulski',
     maintainer_email='mike@gogulski.com',
     url='https://github.com/mikegogulski/python-otrxmppchannel',
-    version='1.0.3',
+    version='1.0.4',
     packages=['otrxmppchannel', ],
     install_requires=[
         'python-potr',
