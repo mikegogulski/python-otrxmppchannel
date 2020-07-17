@@ -2,7 +2,7 @@
 
 import threading
 import time
-from Queue import Queue
+from queue import Queue
 
 import xmpp
 import potr
