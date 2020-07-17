@@ -77,7 +77,7 @@ class OTRAccount(potr.context.Account):
             pkb64 = b64encode(generateDefaultKey().serializePrivateKey())
             msg = 'A base64-encoded DSA OTR private key for the XMPP' \
                   'account is required. Here is a fresh one you can use: \n'
-            raise ValueError(msg + pkb64)
+            raise ValueError(msg + str(pkb64))
         else:
             self.pk = potr.crypt.PK.parsePrivateKey(b64decode(pk))[0]
 
