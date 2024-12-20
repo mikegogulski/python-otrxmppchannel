@@ -1,3 +1,9 @@
+Final update
+------------
+
+This repository is archived and left online for historical reasons and
+because someone might decide it's useful and fork it. Enjoy!
+
 XMPP-OTR channel for Python
 ===========================
 
@@ -83,14 +89,7 @@ Dependencies
 Author
 ------
 
--  `Mike Gogulski`_ - https://github.com/mikegogulski
-
-Donations
----------
-
-If you found this software useful and would like to encourage its
-maintenance and further development, please consider making a donation
-to the Bitcoin address ``1MWFhwdFVEhB3X4eVsm9WxwvAhaxQqNbJh``.
+-  Mike Gogulski - https://github.com/mikegogulski
 
 License
 -------
@@ -102,4 +101,3 @@ file.
 .. _Off-the-Record Messaging: https://otr.cypherpunks.ca/
 .. _xmpppy: http://xmpppy.sourceforge.net/
 .. _pure-python-otr: https://github.com/afflux/pure-python-otr
-.. _Mike Gogulski: mailto:mike@gogulski.com
